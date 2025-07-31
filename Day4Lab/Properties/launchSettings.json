@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Day4Lab": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

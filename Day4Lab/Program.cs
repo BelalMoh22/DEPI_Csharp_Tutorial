@@ -70,15 +70,88 @@
             //    Console.WriteLine("Finish Apllication.....");
             //}
             //Console.ReadLine();
-            Console.WriteLine("--------------------------------------");
-            try
-            {
-                Console.WriteLine(div(100, 0));
-                Console.ReadLine();
-            }
-            catch (Exception ex) { 
-                Console.WriteLine($"{ex.Message}");
-            }
+            //Console.WriteLine("--------------------------------------");
+            //try
+            //{
+            //    Console.WriteLine(div(100, 0));
+            //    Console.ReadLine();
+            //}
+            //catch (Exception ex) { 
+            //    Console.WriteLine($"{ex.Message}");
+            //}
+            #endregion
+
+            #region Day4 Part2 (Oop)
+            /*
+                1-Object Class
+                2-Inheritance
+                3-Polymorphism 
+                4-Encapsulation
+                5-Abstraction
+             */
+
+            //Class Members    
+            //         Fields        (Variables )  Done 
+            //         Methods                     Done
+            //         Property Full               Done 
+            //         Property Auto               Done 
+            //         Create Object From Class    Done 
+            //         Constructor    ---          Done               
+            //     Method OverLoad
+            //     Constructor OverLoad
+            //Readonly Vs Const
+            //Inheritance   OverView
+            //String str1 = new string("Yussif");
+            //Console.WriteLine(str1);
+            ////==
+            //string str2= "Belal";
+            //Console.WriteLine(str2);
+            //Console.WriteLine("-----------------------------------");
+            //Int32 i = new Int32();
+            //i = 10;
+            //Console.WriteLine(i);
+            //int x = 15;
+            //Console.WriteLine(x);
+            //Console.WriteLine("-----------------------------------");
+            //// Create Object 
+            //Human belal = new Human();
+            //belal.name = "Belal Mohamed";
+            //belal._id = 10;
+            //Console.WriteLine(belal.sayHello());
+            //Console.WriteLine(belal.sayName());
+            //Console.WriteLine("-----------------------------------");
+            //Human sayed = new Human();
+            //sayed.name = "Sayed Hawas";
+            //sayed._id = 15;
+            //Console.WriteLine(sayed.sayHello());
+            //Console.WriteLine(sayed.sayName());
+            //Console.WriteLine("-----------------------------------");
+            // here employee is user defined Type as int , string , float ...
+            //List <Employee> employees = new List<Employee>();
+            //Employee ahmed = new Employee();
+            //ahmed.SetId(100);
+            //Console.WriteLine(ahmed.Id());
+            // By Property
+            //ahmed.Id = 10;
+            //Console.WriteLine(ahmed.Id);
+
+            // Pass Property
+            //ahmed.ApplicationName = "eee"; // error because Appname is readOnly
+            //ahmed.Id = 1;
+            //ahmed.Name = "Ahmed Ali";
+            //ahmed.Salary = 15000;
+            //ahmed.Job = "Full Stack";
+            //ahmed.Address = "Alexandria , Egypt";
+            //ahmed.Attend = "@ 25-7-2025";
+            //ahmed.Age = 25;
+            ////ahmed.City = "Tanta";
+            ////Console.WriteLine(ahmed.Attend); // error because there is no here getter for attend
+            //Console.WriteLine(ahmed.getInfo());
+
+            // Constructors
+            Employee mariam = new Employee();
+            mariam.Name = "Mariam Ahmed";
+            Console.WriteLine(mariam.getInfo());
             #endregion
         }
         /// <summary>
@@ -96,6 +169,24 @@
                 throw new Exception("Belal Say that Cannot Divide by Zero");
             }
             return n1 / n2;
+        }
+    }
+    // Create Class 
+    // Access Modifier : public , internal , private
+    public class Human
+    {
+        // Fields (Attributes)
+        public string name;
+        public int _id;
+        // Behaviour(Methods) 
+        public string sayHello()
+        {
+            return "Hello...";
+        }
+
+        public string sayName()
+        {
+            return $"My name is {name}";
         }
     }
 }

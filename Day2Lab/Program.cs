@@ -1,4 +1,6 @@
-﻿namespace Day2Lab
+﻿using System.Runtime.Intrinsics.X86;
+
+namespace Day2Lab
 {
     internal class Program
     {
@@ -46,7 +48,7 @@
             //decimal dec = 1.235m; // Corrected by adding 'm' at the end 
             //Console.WriteLine("Decimal: " + dec);
 
-            //// Diff. Betwween Decimal and Double and Float
+            //// Diff.Betwween Decimal and Double and Float
             //double diffDouble = 1 / 3d;
             //float diffFloat = 1 / 3f;
             //decimal diffDecimal = 1 / 3m;
@@ -55,6 +57,24 @@
             //Console.WriteLine("Double: " + diffDouble);
             //Console.WriteLine("Float: " + diffFloat);
             //Console.WriteLine("Decimal: " + diffDecimal);
+
+            ////Use the MinValue and MaxValue properties for each unsigned integral type
+            ////---------------------------------------------------------------------------
+            //            Console.WriteLine("--------------------------------------------");
+            //            Console.WriteLine("Unsigned integral types:"); // without negative values
+            //            Console.WriteLine($"byte   : {byte.MinValue} to {byte.MaxValue}");
+            //            Console.WriteLine($"ushort : {ushort.MinValue} to {ushort.MaxValue}");
+            //            Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
+            //            Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
+
+            ////Use the MinValue and MaxValue properties for each signed float type
+            ////------------------------------------------------------------------------
+            //            Console.WriteLine("---------------------------------------");
+            //            Console.WriteLine("Floating point types:");
+            //            Console.WriteLine($"float  : {float.MinValue} to {float.MaxValue} (with ~6-9 digits of precision)");
+            //            Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
+            //            Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
+
 
             //// String
             //string str = "Hello World !";
@@ -109,10 +129,17 @@
             //Console.WriteLine("Add Number1 and Number2 After Parsing: " + (number1 + number2)); // here it will add the two numbers due to they are in brackets
 
             //// Format String
-            //Console.WriteLine("Add Number1 and Number2 by Format String: {0} + {1} = {2}", number1, number2, number1 + number2);
+            //Console.WriteLine("Add Number1 and Number2 by Format String: {0} + {1} = {2}", number1, number2, (number1 + number2));
 
             //// String Literals --> Best
-            //Console.WriteLine("Add Number1 and Number2 by String Literals: " + $"{number1} + {number2} = {(number1 + number2)}");
+            //Console.WriteLine($"Add Number1 and Number2 by String Literals: {number1} + {number2} = {(number1 + number2)}");
+
+            // to covert to string  convert 
+            //char c = 'a';
+            //string name = Convert.ToString(c);
+            //int asci32=Convert.ToInt32(c);
+            //Console.WriteLine(name);
+            //Console.WriteLine(asci32);
             #endregion
 
             #region Day2 Part2
@@ -122,7 +149,6 @@
             //    -- ReferenceType Stored in Heap --> allow null as : String , object
             //*/
             //// Object
-
             //object obj = "Ahmed";
             //obj = 123;
             //obj ="Ali";
@@ -171,7 +197,7 @@
             //int i = dy + 15;
             //Console.WriteLine(i);
 
-            //var str4 = "Hello World ...";
+            //var str4 = "Hello World ...";         
             //Console.WriteLine(str4.Length);
 
             //dynamic str5= "Hello World ...";
@@ -246,7 +272,7 @@
                     Console.WriteLine("Hi " + userName + "....");
                     Console.WriteLine("DateTime is "+DateTime.Now);
                 }
-            }else if((userName == "ahmed" && password == "222") ||(userName == "tamer" && password == "777"))
+            }else if((userName == "ahmed" && password == "222") || (userName == "tamer" && password == "777"))
             {
                 Console.WriteLine("Welcome EndUser "+ userName);
             }else {

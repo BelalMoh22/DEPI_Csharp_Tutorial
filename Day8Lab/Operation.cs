@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Day8Lab
-////6)Generic type.
+//6)Generic type.
 {
     internal class Operation<T> // CRUD (CREATE , READ (ALL , BY ID , UPDATE , DELETE))
     {

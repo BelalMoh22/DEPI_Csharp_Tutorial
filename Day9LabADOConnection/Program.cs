@@ -19,6 +19,7 @@ namespace Day9LabADOConnection
             //////2) Connection string (Server ; Database ; Security)
             //string connection = "Data Source=Belal-2004;Initial Catalog=ADOTest;Integrated Security=True;Trust Server Certificate=True";
             //con.ConnectionString = connection; 
+
             ////Server=myServerName,myPortNumber;Database=myDataBase;User Id=myUsername;Password=myPassword;
             //// ConnectionString - Specifies the string used to open a database connection.
 

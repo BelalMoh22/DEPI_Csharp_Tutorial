@@ -274,7 +274,7 @@ namespace Day3Lab
             //}
             //=====================================================================================
             // Dictionary 
-            //Dictionary<int , string> students = new Dictionary<int , string>();
+            //Dictionary<int, string> students = new Dictionary<int, string>();
             //students.Add(1, "Sayed");
             //students.Add(2, "Mohamed");
             //students.Add(3, "Retaj");
@@ -322,13 +322,13 @@ namespace Day3Lab
 
             ////Calc Method
             //Console.WriteLine(CalcTwoNumbers(10, 20, "/"));
-//====================================================================================
+            //====================================================================================
             //Optional Parameters
 
             //Console.WriteLine(subtract(10, 20)) ;
             //Console.WriteLine(subtract(y: 10, x: 20)); //Pass Naming
             //Console.WriteLine(subtract());
-//==========================================================================================
+            //==========================================================================================
             // Pass Paramenters With Value & Ref & Out 
             // pass By Value
             int number = 5;

@@ -6,6 +6,13 @@ namespace Day2Lab
     {
         static void Main(string[] args)
         {
+            /*
+            Note: 
+                1- implicit   small to big
+                * 2- explicit   big to small (cast)  
+                * 3- string to any type   <type>.Parse( )
+                * 4- any type to string  Convert.to<type>( )
+ */
             #region Day1
             // Day1 
             //Console.Write("Enter Your Name: ");
@@ -151,7 +158,7 @@ namespace Day2Lab
             //// Object
             //object obj = "Ahmed";
             //obj = 123;
-            //obj ="Ali";
+            //obj = "Ali";
             //obj = 5;
             ////int total = obj; // here it will be error because he doesn't know the object is int here i must make unboxing by casting the Object
             //int total = (int) obj + 10;
@@ -180,7 +187,7 @@ namespace Day2Lab
 
             //// var implicit datatype
 
-            //// var cannot be declared only we must declare and intialize
+            ////// var cannot be declared only we must declare and intialize
             //var v = 15;
             //var n = "Ali";
             ////n = 152.5; // here there is an error because the var from the first value that intialize to it so it will take it's datatype
@@ -216,41 +223,46 @@ namespace Day2Lab
             //Math library
             int x = 100;
             Console.WriteLine(Math.Pow(2, 3));
-////////////////////////////////////////////////////////////////////////////////////////
-        // Jump Statments
-        // goto
-        //start:
-        //    Console.BackgroundColor = ConsoleColor.Blue;
-        //    Console.ForegroundColor = ConsoleColor.Black;
-        //    Console.Clear();
-        //    Console.Write("Enter your name :  ");
-        //    string str6 = Console.ReadLine();
-        //    Console.ForegroundColor = ConsoleColor.Red;
-        //    Console.BackgroundColor = ConsoleColor.Black;
-        //    Console.Clear();
-        //    Console.WriteLine("Welcome " + str6);
-        //    Console.ReadLine();
-        //    Console.Clear();
-        //    //goto start;
-////////////////////////////////////////////////////////////////////////////////////////
-//           *)Literals Letters:-
-        //-----------------------
+            ////////////////////////////////////////////////////////////////////////////////////////
+            // Jump Statments
+            // goto
+            //start:
+            //    Console.BackgroundColor = ConsoleColor.Blue;
+            //    Console.ForegroundColor = ConsoleColor.Black;
+            //    Console.Clear();
+            //    Console.Write("Enter your name :  ");
+            //    string str6 = Console.ReadLine();
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.BackgroundColor = ConsoleColor.Black;
+            //    Console.Clear();
+            //    Console.WriteLine("Welcome " + str6);
+            //    Console.ReadLine();
+            //    Console.Clear();
+            //    //goto start;
+            ////////////////////////////////////////////////////////////////////////////////////////
+            //           *)Literals Letters:-
+            //-----------------------
 
-        Console.WriteLine("Sayed hawas");
-        Console.WriteLine("Sayed       Hawas");
-        Console.WriteLine("Sayed\t hawas"); // \t : give you five spaces
-        Console.WriteLine("----------------");
-        Console.WriteLine("Sayed\n hawas");
-        Console.WriteLine("Sayed \"Said\" Hawas");
-        Console.WriteLine("c\\folder\\ahmed.doc");
-        Console.WriteLine(@"c\folder\ahmed.doc"); // here it will not see the literals 
-        Console.WriteLine("\a"); // beep 
-        Console.WriteLine("\0"); // Null
-/////////////////////////////////////////////////////////////////////////////////////////////////   
-        //Control Flow Program
-        //A.Conditional Statments : ?(ternary Operator), if-else , Switch   
-        // ternary operator
-        Console.WriteLine(1 > 10 ? "True" : "False");
+            Console.WriteLine("Sayed hawas");
+            Console.WriteLine("Sayed       Hawas");
+            Console.WriteLine("Sayed\t hawas"); // \t : give you five spaces
+            Console.WriteLine("----------------");
+            Console.WriteLine("Sayed\n hawas");
+            Console.WriteLine("Sayed \"Said\" Hawas");
+            Console.WriteLine("c\\folder\\ahmed.doc");
+            Console.WriteLine(@"c\folder\ahmed.doc"); // here it will not see the literals 
+            Console.WriteLine("\a"); // beep 
+            Console.WriteLine("\0"); // Null
+            /////////////////////////////////////////////////////////////////////////////////////////////////   
+            //Control Flow Program
+            //A.Conditional Statments : ?(ternary Operator), if-else , Switch   
+            // ternary operator
+            Console.Write("Enter Your Age: ");
+            int age;
+            int.TryParse(Console.ReadLine(), out age);
+            var ageCond = (age > 25) ? "Adult" : "Minor";
+            Console.WriteLine(ageCond);
+            Console.WriteLine(1 > 10 ? "True" : "False");
 
             /*
             if-else statment
@@ -265,17 +277,21 @@ namespace Day2Lab
             Console.Write("Enter Your Password: ");
             string password = Console.ReadLine();
 
-            if((userName=="belal" && password == "123") || (userName=="malak" && password=="555")){
+            if ((userName == "belal" && password == "123") || (userName == "malak" && password == "555"))
+            {
                 Console.WriteLine("Welcome Admin " + userName);
                 if (userName == "belal")
                 {
                     Console.WriteLine("Hi " + userName + "....");
-                    Console.WriteLine("DateTime is "+DateTime.Now);
+                    Console.WriteLine("DateTime is " + DateTime.Now);
                 }
-            }else if((userName == "ahmed" && password == "222") || (userName == "tamer" && password == "777"))
+            }
+            else if ((userName == "ahmed" && password == "222") || (userName == "tamer" && password == "777"))
             {
-                Console.WriteLine("Welcome EndUser "+ userName);
-            }else {
+                Console.WriteLine("Welcome EndUser " + userName);
+            }
+            else
+            {
                 Console.WriteLine("Invalid Username or Password");
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -304,7 +320,8 @@ namespace Day2Lab
             Console.Write("Enter The Operator: ");
             string op = Console.ReadLine();
 
-            switch (op) {
+            switch (op)
+            {
                 case "+":
                     Console.WriteLine($"{num1} {op} {num2} = {(num1 + num2)}");
                     break;
@@ -323,7 +340,7 @@ namespace Day2Lab
 
                 default:
                     Console.WriteLine("Invalid Operator");
-                break;
+                    break;
             }
             #endregion
         }

@@ -31,7 +31,7 @@ namespace Day11DataBaseFirstLab
 
             #region Day 11 Part 2
             // IEnumerable vs IQueryable (LINQ)
-            using (EfcoreDatabaseFirstDbContext db2 = new EfcoreDatabaseFirstDbContext()) 
+            using (EfcoreDatabaseFirstDbContext db2 = new EfcoreDatabaseFirstDbContext())
             {
                 // SQL Profile : it is a tool to monitor the SQL queries sent to the database
                 // Select Top (3) * from Employees where IsDeleted = 0;
@@ -49,9 +49,8 @@ namespace Day11DataBaseFirstLab
                     Console.WriteLine(e.ToString());
                 }
             }
-            
+        }    
             #endregion
-        }
         public static void LoadData(EfcoreDatabaseFirstDbContext db)
         {
             using (db)

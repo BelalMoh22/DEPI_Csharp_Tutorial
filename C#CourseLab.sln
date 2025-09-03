@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day12Lab", "Day12Lab\Day12L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day13Lab", "Day13Lab\Day13Lab.csproj", "{C18301A4-81EA-4EC1-A313-2A757D096796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart20480C", "HTML,CSS,JS\Smart20480C.csproj", "{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{C18301A4-81EA-4EC1-A313-2A757D096796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C18301A4-81EA-4EC1-A313-2A757D096796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C18301A4-81EA-4EC1-A313-2A757D096796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

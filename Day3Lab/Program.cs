@@ -153,7 +153,6 @@ namespace Day3Lab
             //    Console.WriteLine(i);
             //    i++;
             //}while (i < 10);
-
             #endregion
 
             #region Day3 part2
@@ -186,7 +185,7 @@ namespace Day3Lab
             //Console.WriteLine("-------------------------------------------------");
             //// Declare and Intialize Array in One line
             //string[] students1 = new string[3] { "Mariam" , "Tamer" , "Tarek"};
-            //string[] students2 = new string[] { "Mariam", "Tamer", "Tarek","Belal" , "Malak" };
+            //string[] students2 = new string[] { "Mariam", "Tamer", "Tarek", "Belal" , "Malak" };
             //// print Array By Foreach
             //Console.WriteLine("Array with Foreach: ");
             //foreach (var student in students1) {
@@ -204,7 +203,7 @@ namespace Day3Lab
             //string[] books = new string[booksCount];
             //for(i=0; i < booksCount; i++) 
             //{
-            //    Console.Write($"Enter the Name of The Book {i+1}: ");
+            //    Console.Write($"Enter the Name of The Book Number  {i+1}: ");
             //    books[i] = Console.ReadLine();
             //}
             //Console.WriteLine("Enter any Key to print your Book Library: ");
@@ -336,7 +335,7 @@ namespace Day3Lab
 
             Console.WriteLine("Pass By Value: "+AddValue(number)); //15
 
-            Console.WriteLine("After Add Value: " + number); // 5 because i didnot change in the variable i pass the value only
+            Console.WriteLine("After Add Value: " + number); // 5 because i didn't change in the variable i pass the value only
             Console.WriteLine("--------------------------------------------------------");
 
             // pass By Reference
@@ -345,7 +344,7 @@ namespace Day3Lab
 
             Console.WriteLine("Pass By Reference: " + AddValue(ref number2)); //15 because here i passed to it the variable so it will change it
 
-            Console.WriteLine("After Add Value: " + number2);
+            Console.WriteLine("After Add Value: " + number2); // 15 because i changed in the variable
             Console.WriteLine("--------------------------------------------------------");
             // pass by Out
             //int x;

@@ -47,12 +47,6 @@ function ShowResult() {
     document.getElementById("artistList").innerHTML = output;
 }
 
-
-
-
-
-   
-
 //    request.onreadystatechange = function () {
 //        if (request.readyState === 4) {
 //            try {
@@ -78,9 +72,6 @@ function ShowResult() {
 //    return li;
 //};
 
-
-
-
 //function displaySchedule() {
 //    clearList();
 //    for (var i = 0; i < schedule.length; i++) {
@@ -88,7 +79,6 @@ function ShowResult() {
 //            list.appendChild(li);
 //        }
 //}
-
 
 //button.addEventListener("click", displaySchedule, false);
 //downloadSchedule();

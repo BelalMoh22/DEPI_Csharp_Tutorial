@@ -19,7 +19,8 @@ namespace Day11DataBaseFirstLab
             // 2) Create Table in the Database (e.g., Employee)
             // 3) Create a New Project
             // 4) Add Entity Framework Core NuGet Packages (Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.SqlServer, Microsoft.EntityFrameworkCore.Tools, Microsoft.EntityFrameworkCore.Design)
-            // 5) Scaffold the Database to Generate Entity Classes and DbContext Class (PMC) -> by command: Scaffold-DbContext "Server=.;Database=MyDatabase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force 
+            // 5) Scaffold the Database to Generate Entity Classes and DbContext Class (PMC) -> by command: Scaffold-DbContext "Server=.;Database=MyDatabase;Trusted_Connection=True;"
+            // Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force 
 
             // 6) Perform CRUD operations using the generated DbContext and Entity Classes
             Console.WriteLine("------------CRUD Operations Using EF Core (Database First Approach)------------");

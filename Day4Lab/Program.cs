@@ -71,14 +71,15 @@
             //}
             //Console.ReadLine();
             //Console.WriteLine("--------------------------------------");
-            //try
-            //{
-            //    Console.WriteLine(div(100, 0));
-            //    Console.ReadLine();
-            //}
-            //catch (Exception ex) { 
-            //    Console.WriteLine($"{ex.Message}");
-            //}
+            try
+            {
+                Console.WriteLine(div(100, 0));
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.Message}");
+            }
             #endregion
 
             #region Day4 Part2 (Oop)
@@ -127,6 +128,7 @@
             //Console.WriteLine(sayed.sayName());
             //Console.WriteLine("-----------------------------------");
             // here employee is user defined Type as int , string , float ...
+            // Any Type Can Be DataType
             //List <Employee> employees = new List<Employee>();
             //Employee ahmed = new Employee();
             //ahmed.SetId(100);

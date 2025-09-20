@@ -4,19 +4,20 @@ namespace MyFirstWindowsFormApp
     {
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtName.Text.Trim() =="Belal" && txtPassword.Text.Trim()== "123") {
+            if (txtName.Text.Trim() == "Belal" && txtPassword.Text.Trim() == "123")
+            {
                 //Form2 
                 MainFrm mainFrm = new MainFrm();
-                mainFrm.Show(); 
+                mainFrm.Show();
             }
             else
             {
-                MessageBox.Show("Invalid Userame Or Password....", "Error",MessageBoxButtons.OKCancel , MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Userame Or Password....", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
         }
 
@@ -36,6 +37,11 @@ namespace MyFirstWindowsFormApp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged_1(object sender, EventArgs e)
         {
 
         }

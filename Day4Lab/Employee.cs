@@ -95,7 +95,7 @@ namespace Day4Lab
         // Auto Property --> Database
         // prop 
         public int Age { get; set; }
-        public string City { get; set; } = "Alex"; // Intial Value  
+        public string City { get; set; } = "Alex"; // Initial Value  
         #endregion
 
         #region Methods

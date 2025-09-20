@@ -41,10 +41,10 @@
             Console.WriteLine("----------------Part 1--------------");
             //Create Object from Person
             // Default Constructor
-            Person P1= new Person();
-            P1.Id = 1;
-            P1.Name = "Ahmed";
-            P1.Address = "Alexandria";
+            Person P1 = new Person() { Id = 1 , Name = "Ahmed" , Address = "Alexandria"};
+            //P1.Id = 1;
+            //P1.Name = "Ahmed";
+            //P1.Address = "Alexandria";
             Console.WriteLine(P1.SayInfo());
             P1.SayHello();
             Console.WriteLine("------------------------------");
@@ -52,7 +52,7 @@
             Person P2= new Person(2 , "Tamer" , "Cairo");
             Console.WriteLine(P2.SayInfo());
             Console.WriteLine("------------------------------");
-            Console.WriteLine(Person.ApplicationName); 
+            Console.WriteLine(Person.ApplicationName);  // Access By Class Name only
             //P1.instanceName = "P1 Copy"; // here it will be an error as read only can be set only in Constructor
             Console.WriteLine(P1.instanceName);
             Console.WriteLine(P2.instanceName);
@@ -73,6 +73,7 @@
             M1.Bouns = 5000;
             Console.WriteLine($"Income for Manager {M1.Income()}");
             #endregion
+
             Console.WriteLine("----------------Part 2--------------");
             #region Day3 Part2
             //List<int> list = new List<int>() { 12, 2, 3, 5, 8, 8, 7, 8 };
